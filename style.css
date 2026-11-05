@@ -1,0 +1,20 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.menu {
+    display: flex;
+    gap: 16px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #4426FF;
+}
+
+.menu a:hover {
+    color: #000000;
+}
