@@ -13,29 +13,34 @@ $cennik = [
 ?>
 <html lang="pl">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Szprycha - serwis rowerowy</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
-   <header class="site-header">
-        <a class="logo" href="#">
-            <svg viewBox="0 0 120 64" width="72" height="38" role="img" aria-labelledby="logo-tytul">
-                <title id="logo-tytul">Szprycha</title>
-                <circle cx="28" cy="42" r="18" fill="none" stroke="#4426FF" stroke-width="5"/>
-                <circle cx="92" cy="42" r="18" fill="none" stroke="#4426FF" stroke-width="5"/>
-                <polyline points="28,42 48,14 80,14 92,42" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="round"/>
-                <polyline points="48,14 60,42 80,14" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="round"/>
-            </svg>
-            <span>Szprycha</span>
-        </a>
-        <nav class="menu">
-            <a href="#uslugi">Usługi</a>
-            <a href="#cennik">Cennik</a>
-            <a href="#kontakt">Kontakt</a>
-        </nav>
-    </header>
+  <header class="site-header">
+    <a class="logo" href="#">
+        <svg viewBox="0 0 120 64" width="72" height="38" role="img" aria-labelledby="logo-tytul">
+            <title id="logo-tytul">Szprycha</title>
+            <circle cx="28" cy="42" r="18" fill="none" stroke="#4426FF" stroke-width="5"/>
+            <circle cx="92" cy="42" r="18" fill="none" stroke="#4426FF" stroke-width="5"/>
+            <polyline points="28,42 48,14 80,14 92,42" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="round"/>
+            <polyline points="48,14 60,42 80,14" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="round"/>
+        </svg>
+        <span>Szprycha</span>
+    </a>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+
+    <nav class="menu" id="menu">
+        <a href="#uslugi">Usługi</a>
+        <a href="#cennik">Cennik</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+</header>
 
     <main>
         <section id="uslugi">
